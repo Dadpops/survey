@@ -3,13 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Script -->
-    <script src="script.js"></script>
+    <main>
+        <div class="container">
+        <div id="title_container">
+          <h1 id="title" class="text-center">Chrispy Chris Survey Form!</h1>
+          <p id="description" class="text-center">Thank you for your participation in helping me stay Chrispy!</p>
+        </div>
+        <div id="form_container">
+          <form id="survey-form">
+          <div class="form-group">
+            <label for="name-label" id="name-label">Name
+            <input type="text" id="name" class="form-control" placeholder="Type name here..." required></input></label>
+          </div>
+          <div class="form-group">
+            <label for="email-label" id="email-label">Email
+            <input type="email" id="email" class="form-control" placeholder="Type email here..." required></input></label>
+          </div>
+          <div class="form-group">
+            <label for="number-label" id="number-label">Age
+            <input type="number" id="number" class="form-control" min="0" max="150" placeholder="# here.." required></input></label>
+          </div>
+          <div class="form-group">
+            <label for="dropdown-label"> Is Chris Chrispy?</label>
+            <select id="dropdown" class="form-control">
+              <option>Yes</option>
+              <option>Very Yes</option>
+              <option>No.... Yes?</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="radio-label">Would you enjoy some nuggies?</label>
+            <input type="radio" name="nuggies" value="yes">yes</input>
+            <input type="radio" name="nuggies" value="yess">very yes</input>
+            <input type="radio" name="nuggies" value="yesss">No...yes?</input>
+          </div>
+          <div class="form-group">
+            <label for="checkbox-label">Would you like some more nuggies?</label>
+            <input type="checkbox" value="yes1">yes</input>
+            <input type="checkbox" value="yes2">yess</input>
+            <input type="checkbox" value="yes3">yesss</input>
+          </div>
+          <div class="form-group">
+            <label for="textarea-label">How do you feel about a third helping?</label>
+            <textarea name="message" rows="10" cols="30" class="input-textarea">Type Yes Here...</textarea>
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+          </form>
+        </div>
+      </div>
+      </main>
 </body>
 </html>
